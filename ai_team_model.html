@@ -108,11 +108,12 @@ svg.cld{min-width:1150px;width:100%;height:auto;display:block}
 .controls fieldset{border:none;border-top:1px solid var(--line);margin:0;padding:10px 0 4px}
 .controls legend{font-family:var(--serif);font-weight:700;color:var(--ink);padding:0 6px 0 0;font-size:1rem}
 .ctl{margin:10px 0 12px;position:relative}
-.ctl label{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 8px;font-size:.93rem;color:var(--ink);align-items:center}
+.ctl label{display:flex;flex-direction:column;align-items:flex-start;gap:2px;font-size:.93rem;color:var(--ink)}
+.ctl label>span:last-child{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .ctl label>span{min-width:0}
 .ctl output{font-variant-numeric:tabular-nums;color:var(--gold);font-weight:700;white-space:nowrap}
 .ctl small{display:block;color:var(--muted);font-size:.82rem;line-height:1.35;margin-top:2px}
-input[type=range]{width:100%;accent-color:var(--gold);margin:4px 0 0}
+input[type=range]{width:calc(100% - 16px);accent-color:var(--gold);margin:4px 8px 0}
 .kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:12px}
 @media (max-width:760px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .kpi{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--ink);padding:10px 12px;position:relative}
